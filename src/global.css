@@ -1,0 +1,95 @@
+/* src/global.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f5f7fa;
+  /* subtle off‑white */
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.main-heading {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.table-header {
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  color: white;
+  font-weight: 600;
+}
+
+.table-row:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.edit-input {
+  width: 100%;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+
+/* Custom UI enhancements */
+.fillter-btn-box {
+  gap: 10px;
+  display: flex;
+}
+
+.btn-space {
+  display: flex;
+  gap: 10px;
+}
+
+
+.editable-table-container {
+  background: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+}
+
+.toolbar {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.pagination .page-item {
+  margin: 0 2px;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #667eea;
+  border-color: #667eea;
+  color: white;
+}
+
+.pagination .page-link {
+  color: #667eea;
+}
+
+/* Premium button style */
+.editable-table-container .btn-premium {
+  background-color: #667eea;
+  border: none;
+  color: white;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-premium:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 126, 95, 0.3);
+  background-color: #667eea !important;
+  color: #fff !important;
+  border-color: #667eea !important;
+}
